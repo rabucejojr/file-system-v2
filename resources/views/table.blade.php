@@ -47,7 +47,7 @@
                                     <button type="button"
                                         onclick="edit('{{ $file->FileFolder }}','{{ $file->Filename }}','{{ $file->FileDescription }}','{{ $file->FilePath }}')"
                                         class="btn btn-info">Edit</button>
-                                    <button type="button" class=" btn btn-danger">Delete</button>
+                                    <button type="button" onclick="delete('{{$file->FileId}}')" class=" btn btn-danger">Delete</button>
                                 </td>
                             </tr>
                         @endforeach
@@ -122,7 +122,7 @@
             });
         });
         // DELETE
-        function delete(FileID) {
+        function delete(FileId) {
             var file_data = new FormData()
             file_data.append('FileId', FileId)
             Swal.fire({
