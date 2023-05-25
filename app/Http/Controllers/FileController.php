@@ -90,7 +90,7 @@ class FileController extends Controller
             'result' => false,
             'message' => 'please contact admin'
         ];
-        $delete = File::where('StudentID', $FileId)->delete();
+        $delete = File::where('FileId', $FileId)->delete();
         if ($delete) {
             $message = [
                 'result' => true,
