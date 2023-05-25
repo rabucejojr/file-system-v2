@@ -60,6 +60,7 @@
     <script src="{{ asset('js/demo/chart-area-demo.js') }}"></script>
     <script src="{{ asset('js/demo/chart-pie-demo.js') }}"></script>
     <script src="https://kit.fontawesome.com/1f0a866061.js" crossorigin="anonymous"></script>
+    @yield('script')
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
         $.ajaxSetup({
@@ -68,7 +69,6 @@
             }
         });
     </script>
-    @yield('script')
 </body>
 
 </html>
