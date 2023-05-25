@@ -30,7 +30,6 @@ class FileController extends Controller
         // update
         if (isset($r->$id)) {
             //diri ang update/edit na code
-
             $file = $r->Filename;
             $path = $r->FilePath;
             $folder = $r->FileFolder;

@@ -130,5 +130,42 @@
             $('.filedesc').val(FileDescription);
             $('.filepath').val(FilePath);
         }
+        function save_edit(){
+            var FileFolder = $('#filefolder').val(FileFolder);
+            var Filename = $('.filename').val(Filename);
+            var FileDescription = $('.filedesc').val(FileDescription);
+            var FilePath = $('.filepath').val(FilePath);
+
+            var file_data = new FormData();
+            file_data.append('FileFolder',FileFolder)
+            file_data.append('Filename',Filename)
+            file_data.append('FileDescription',FileDescription)
+            file_data.append('FilePath',FilePath)
+
+            $.ajax({
+            method: "POST",
+            url: "{{route('store')}}",
+            dataType: 'json',
+            processData:false,
+            contentType:false,
+            cache:false,
+            async:false,
+            data: file_data,
+        }).done(function( msg ) {
+            if(msg.result ==true){
+                Swal.fire(
+                'Update',
+                msg.message,
+                'success'
+                )
+            } else {
+                Swal.fire(
+                'Update',
+                msg.message,
+                'error'
+                )
+            }
+        });
+        }
     </script>
 @endsection
