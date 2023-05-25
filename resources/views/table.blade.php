@@ -185,7 +185,7 @@
 
                 $.ajax({
                     method: "POST",
-                    url: "{{route('fileDelete')}}",
+                    url: "{{route('delete')}}",
                     dataType: 'json',
                     processData:false,
                     contentType:false,
