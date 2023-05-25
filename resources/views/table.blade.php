@@ -47,7 +47,8 @@
                                     <button type="button"
                                         onclick="edit('{{ $file->FileFolder }}','{{ $file->Filename }}','{{ $file->FileDescription }}','{{ $file->FilePath }}')"
                                         class="btn btn-info">Edit</button>
-                                    <button type="button" onclick="delete('{{$file->FileId}}')" class=" btn btn-danger">Delete</button>
+                                    <button type="button" onclick="delete('{{ $file->FileId }}')"
+                                        class=" btn btn-danger">Delete</button>
                                 </td>
                             </tr>
                         @endforeach
@@ -123,48 +124,7 @@
         });
         // DELETE
         function delete(FileId) {
-            var file_data = new FormData()
-            file_data.append('FileId', FileId)
-            Swal.fire({
-                title: 'Are you sure?',
-                text: "You won't be able to revert this!",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Yes, delete it!'
-            }).then((result) => {
-                if (result.isConfirmed) {
-
-                    $.ajax({
-                        method: "POST",
-                        url: "{{ route('delete') }}",
-                        dataType: 'json',
-                        processData: false,
-                        contentType: false,
-                        cache: false,
-                        async: false,
-                        data: file_data,
-                    }).done(function(msg) {
-                        if (msg.result == true) {
-                            Swal.fire(
-                                'Delete',
-                                msg.message,
-                                'success'
-                            )
-                            setTimeout(function() {
-                                window.location.reload();
-                            }, 2000);
-                        } else {
-                            Swal.fire(
-                                'Delete',
-                                msg.message,
-                                'error'
-                            )
-                        }
-                    });
-                }
-            })
+            
         }
         // SHOW EDIT MODAL
         function edit(FileFolder, Filename, FileDescription, FilePath) {
