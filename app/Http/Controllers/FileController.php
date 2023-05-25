@@ -85,12 +85,12 @@ class FileController extends Controller
         }
     }
     public function delete(Request $r){
-        $FileId= $r->FileId;
+        $id= $r->FileId;
         $message = [
             'result' => false,
             'message' => 'please contact admin'
         ];
-        $delete = File::where('FileId', $FileId)->delete();
+        $delete = File::where('FileId', $id)->delete();
         if ($delete) {
             $message = [
                 'result' => true,
