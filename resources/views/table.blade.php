@@ -1,6 +1,6 @@
 @extends('partials.app')
 @section('content')
-    <div class="container-fluid gradient-custom-3">
+    <div class="container-fluid">
         <div class="px-0 w-50 my-2">
             <form class="d-none d-md-flex ms-4" method="POST">
                 @csrf

@@ -18,7 +18,7 @@
                                         {{ $Error }}
                                     </div>
                                 @endif
-                                <form method="POST" action="{{ route('upload') }}">
+                                <form method="POST" action="{{ route('store') }}">
                                     @csrf
                                     {{-- PROGRAM TYPE --}}
                                     <select class="form-select mb-3" aria-label="Default select example" name="FileFolder">
