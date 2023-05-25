@@ -24,4 +24,5 @@ Route::get('/table', [FileController::class, 'table'])->name('table');
 Route::get('/dashboard', [FileController::class, 'dashboard'])->name('dashboard');
 Route::get('/upload', [FileController::class, 'upload'])->name('upload');
 Route::post('/store', [FileController::class, 'store'])->name('store');
+Route::post('/file/delete', [FileController::class, 'delete'])->name('delete');
 

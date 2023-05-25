@@ -84,4 +84,23 @@ class FileController extends Controller
             }
         }
     }
+    public function delete(Request $r){
+        $FileId= $r->FileId;
+        $message = [
+            'result' => false,
+            'message' => 'please contact admin'
+        ];
+        $delete = File::where('StudentID', $FileId)->delete();
+        if ($delete) {
+            $message = [
+                'result' => true,
+                'message' => 'Successfully deleted'
+            ];
+        } else {
+            $message = [
+                'result' => false,
+            ];
+        }
+        return json_encode($message);
+    }
 }
