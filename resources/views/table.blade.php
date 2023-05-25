@@ -122,6 +122,7 @@
                 });
             });
         });
+
         // SHOW EDIT MODAL
         function edit(FileFolder, Filename, FileDescription, FilePath) {
             // get inputs & display to modal fields
@@ -130,51 +131,6 @@
             $('.filename').val(Filename);
             $('.filedesc').val(FileDescription);
             $('.filepath').val(FilePath);
-        }
-        // DELETE TABLE DATA
-        function delete(FileId) {
-            var file_Data = new FormData()
-            file_Data.append('FileId', FileId)
-            Swal.fire({
-                title: 'Are you sure?',
-                text: "You won't be able to revert this!",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Yes, delete it!'
-            }).then((result) => {
-                if (result.isConfirmed) {
-
-                    $.ajax({
-                        method: "POST",
-                        url: "{{ route('delete') }}",
-                        dataType: 'json',
-                        processData: false,
-                        contentType: false,
-                        cache: false,
-                        async: false,
-                        data: file_Data,
-                    }).done(function(msg) {
-                        if (msg.result == true) {
-                            Swal.fire(
-                                'Delete',
-                                msg.message,
-                                'success'
-                            )
-                            setTimeout(function() {
-                                window.location.reload();
-                            }, 2000);
-                        } else {
-                            Swal.fire(
-                                'Delete',
-                                msg.message,
-                                'error'
-                            )
-                        }
-                    });
-                }
-            })
         }
     </script>
 @endsection
