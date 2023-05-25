@@ -129,8 +129,6 @@
             $('.filename').val(Filename);
             $('.filedesc').val(FileDescription);
             $('.filepath').val(FilePath);
-
-            
         }
     </script>
 @endsection
