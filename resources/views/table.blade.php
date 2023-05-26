@@ -62,7 +62,7 @@
         <div class="modal-dialog">
             <div class="modal-content " style="background-color:#ffffffe8 !important">
                 <div class="modal-body">
-                    <div class="rounded h-200 p-4">
+                    <div class="rounded h-200 p-6">
                         <h6 class="mb-4">Update File Info</h6>
                         @if (isset($Success))
                             <div class="alert alert-success" role="alert">
@@ -102,8 +102,10 @@
                                     name="FilePath">
                                 <label for="floatingInput">Path</label>
                             </div>
-                            <div class="text-center">
-                                <button type="submit" onclick="save_edit()" class="btn btn-primary ">SAVE</button>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" onclick="save()" class="btn btn-primary">Save
+                                    changes</button>
                             </div>
                         </form>
                     </div>
@@ -114,14 +116,14 @@
 @endsection
 @section('script')
     <script>
-        $(document).ready(function() {
-            $("#search").on("keyup", function() {
-                var value = $(this).val().toLowerCase();
-                $("#myTable tr").filter(function() {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-            });
-        });
+        // $(document).ready(function() {
+        //     $("#search").on("keyup", function() {
+        //         var value = $(this).val().toLowerCase();
+        //         $("#myTable tr").filter(function() {
+        //             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        //         });
+        //     });
+        // });
 
         function delete(FileId) {
             var file_Data = new FormData()
