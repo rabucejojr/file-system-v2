@@ -8,7 +8,8 @@ use Illuminate\Http\Request;
 class FileController extends Controller
 {
 
-    public function table(){
+    public function table()
+    {
         $files = File::all();
         return view('table', compact('files'));
     }
@@ -16,7 +17,7 @@ class FileController extends Controller
     {
         return view('dashboard');
     }
-        public function upload()
+    public function upload()
     {
         return view('upload');
     }
@@ -84,8 +85,9 @@ class FileController extends Controller
             }
         }
     }
-    public function delete(Request $r){
-        $id= $r->FileId;
+    public function delete(Request $r)
+    {
+        $id = $r->FileId;
         $message = [
             'result' => false,
             'message' => 'please contact admin'
