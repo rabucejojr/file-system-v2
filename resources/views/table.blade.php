@@ -44,7 +44,7 @@
                                 <td>{{ $file->FilePath }}</td>
                                 <td>{{ $file->FileDescription }}</td>
                                 <td>
-                                    <button type="button" id="btnEdit"
+                                    <button type="button"
                                         onclick="edit('{{ $file->FileFolder }}','{{ $file->Filename }}','{{ $file->FileDescription }}','{{ $file->FilePath }}')"
                                         class="btn btn-info">Edit</button>
                                     <button type="button" id="btnDelete" onclick="delete('{{ $file->FileId }}')"
@@ -179,7 +179,6 @@
             $('.filename').val(Filename);
             $('.filedesc').val(FileDescription);
             $('.filepath').val(FilePath);
-            console.log('testing edit');
         }
     </script>
 @endsection
