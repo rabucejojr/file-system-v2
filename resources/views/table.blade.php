@@ -172,8 +172,7 @@
         }
 
         // SHOW EDIT MODAL
-        function edit() {
-            FileFolder, Filename, FileDescription, FilePath
+        function edit(FileFolder, Filename, FileDescription, FilePath) {
             // get inputs & display to modal fields
             $('#edit_file').modal('toggle');
             $('#filefolder').val(FileFolder);
