@@ -43,8 +43,8 @@
         </div>
     </div>
 
-    @yield('script')
     @include('partials.script')
+    @yield('script')
 </body>
 
 </html>
