@@ -168,18 +168,18 @@
             //         });
             //     }
             // })
-            console.log('testing');
+            // console.log('testing');
         }
 
         // SHOW EDIT MODAL
         function edit() {
-            // FileFolder, Filename, FileDescription, FilePath
-            // // get inputs & display to modal fields
-            // $('#edit_file').modal('toggle');
-            // $('#filefolder').val(FileFolder);
-            // $('.filename').val(Filename);
-            // $('.filedesc').val(FileDescription);
-            // $('.filepath').val(FilePath);
+            FileFolder, Filename, FileDescription, FilePath
+            // get inputs & display to modal fields
+            $('#edit_file').modal('toggle');
+            $('#filefolder').val(FileFolder);
+            $('.filename').val(Filename);
+            $('.filedesc').val(FileDescription);
+            $('.filepath').val(FilePath);
             console.log('testing edit');
         }
     </script>
