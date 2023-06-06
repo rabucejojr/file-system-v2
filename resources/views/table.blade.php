@@ -5,7 +5,7 @@
             <form class="d-none d-md-flex ms-4" method="POST">
                 @csrf
                 <input class="form-control border-2" type="search" name="Search" id="search" placeholder="Search File">
-                <button class="btn btn-primary border-0 mx-2" onclick="search('{{ $file->FileId }}">Search</button>
+                {{-- <button class="btn btn-primary border-0 mx-2">Search</button> --}}
             </form>
         </div>
         <!-- Page Heading -->
@@ -47,7 +47,7 @@
                                     <button type="button"
                                         onclick="edit('{{ $file->FileFolder }}','{{ $file->Filename }}','{{ $file->FileDescription }}','{{ $file->FilePath }}')"
                                         class="btn btn-info">Edit</button>
-                                    <button type="button" id="btnDelete" onclick="Delete('{{ $file->FileId }}')"
+                                    <button type="button" id="btnDelete" onclick="Delete()"
                                         class=" btn btn-danger">Delete</button>
                                 </td>
                             </tr>
@@ -116,19 +116,19 @@
 @endsection
 @section('script')
     <script>
-        function search() {
+        $(document).ready(function() {
             $("#search").on("keyup", function() {
                 var value = $(this).val().toLowerCase();
                 $("#myTable tr").filter(function() {
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                 });
             });
-        }
+        });
 
         function Delete() {
-            var id = $(this).data('id'); // Get the ID of the data to delete
+            var id = $(this).data(id); // Get the ID of the data to delete
             $.ajax({
-                url: "{{ route('delete') }}", // Replace with your server-side script URL
+                url: "{{route('delete')}}", // Replace with your server-side script URL
                 method: 'POST',
                 data: {
                     id: id
