@@ -5,7 +5,7 @@
             <form class="d-none d-md-flex ms-4" method="POST">
                 @csrf
                 <input class="form-control border-2" type="search" name="Search" id="search" placeholder="Search File">
-                <button class="btn btn-primary border-0 mx-2">Search</button>
+                <button class="btn btn-primary border-0 mx-2" onclick="search('{{ $file->FileId }}">Search</button>
             </form>
         </div>
         <!-- Page Heading -->
@@ -47,7 +47,7 @@
                                     <button type="button"
                                         onclick="edit('{{ $file->FileFolder }}','{{ $file->Filename }}','{{ $file->FileDescription }}','{{ $file->FilePath }}')"
                                         class="btn btn-info">Edit</button>
-                                    <button type="button" id="btnDelete" onclick="delete('{{ $file->FileId }}')"
+                                    <button type="button" id="btnDelete" onclick="Delete('{{ $file->FileId }}')"
                                         class=" btn btn-danger">Delete</button>
                                 </td>
                             </tr>
@@ -116,64 +116,34 @@
 @endsection
 @section('script')
     <script>
-        $(document).ready(function() {
+        function search() {
             $("#search").on("keyup", function() {
                 var value = $(this).val().toLowerCase();
                 $("#myTable tr").filter(function() {
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                 });
             });
-        });
+        }
 
-        
-        // function delete() {
-        //     var file_Data = new FormData()
-        //     file_Data.append('FileId', FileId)
-        //     Swal.fire({
-        //         title: 'Are you sure?',
-        //         text: "You won't be able to revert this!",
-        //         icon: 'warning',
-        //         showCancelButton: true,
-        //         confirmButtonColor: '#3085d6',
-        //         cancelButtonColor: '#d33',
-        //         confirmButtonText: 'Yes, delete it!'
-        //     }).then((result) => {
-        //         if (result.isConfirmed) {
-
-        //             $.ajax({
-        //                 method: "POST",
-        //                 url: "{{ route('delete') }}",
-        //                 dataType: 'json',
-        //                 processData: false,
-        //                 contentType: false,
-        //                 cache: false,
-        //                 async: false,
-        //                 data: file_Data,
-        //             }).done(function(msg) {
-        //                 if (msg.result == true) {
-        //                     Swal.fire(
-        //                         'Delete',
-        //                         msg.message,
-        //                         'success'
-        //                     )
-        //                     setTimeout(function() {
-        //                         window.location.reload();
-        //                     }, 2000);
-        //                 } else {
-        //                     Swal.fire(
-        //                         'Delete',
-        //                         msg.message,
-        //                         'error'
-        //                     )
-        //                 }
-        //             });
-        //         }
-        //     })
-        //     console.log('testing');
-        // }
-
-        function delete(){
-            console.log('delete is pressed');
+        function Delete() {
+            var id = $(this).data('id'); // Get the ID of the data to delete
+            $.ajax({
+                url: "{{ route('delete') }}", // Replace with your server-side script URL
+                method: 'POST',
+                data: {
+                    id: id
+                }, // Send the ID as a parameter
+                success: function(response) {
+                    // Handle the response from the server
+                    console.log(response);
+                    // Perform any necessary UI updates
+                    $(this).closest('tr').remove();
+                },
+                error: function(xhr, status, error) {
+                    // Handle any errors that occur during the AJAX request
+                    console.log(error);
+                }
+            });
         }
 
         // SHOW EDIT MODAL
