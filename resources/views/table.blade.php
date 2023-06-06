@@ -2,10 +2,10 @@
 @section('content')
     <div class="container-fluid">
         <div class="px-0 w-50 my-2">
-            <form class="d-none d-md-flex ms-4" method="POST">
+            <form class="d-none d-md-flex ms-4" method="GET">
                 @csrf
                 <input class="form-control border-2" type="search" name="Search" id="search" placeholder="Search File">
-                {{-- <button class="btn btn-primary border-0 mx-2">Search</button> --}}
+                <button class="btn btn-primary border-0 mx-2">Search</button>
             </form>
         </div>
         <!-- Page Heading -->
@@ -125,26 +125,26 @@
             });
         });
 
-        function Delete() {
-            var id = $(this).data(id); // Get the ID of the data to delete
-            $.ajax({
-                url: "{{route('delete')}}", // Replace with your server-side script URL
-                method: 'POST',
-                data: {
-                    id: id
-                }, // Send the ID as a parameter
-                success: function(response) {
-                    // Handle the response from the server
-                    console.log(response);
-                    // Perform any necessary UI updates
-                    $(this).closest('tr').remove();
-                },
-                error: function(xhr, status, error) {
-                    // Handle any errors that occur during the AJAX request
-                    console.log(error);
-                }
-            });
-        }
+        // function Delete() {
+        //     var id = $(this).data(id); // Get the ID of the data to delete
+        //     $.ajax({
+        //         url: "{{route('delete')}}", // Replace with your server-side script URL
+        //         method: 'POST',
+        //         data: {
+        //             id: id
+        //         }, // Send the ID as a parameter
+        //         success: function(response) {
+        //             // Handle the response from the server
+        //             console.log(response);
+        //             // Perform any necessary UI updates
+        //             $(this).closest('tr').remove();
+        //         },
+        //         error: function(xhr, status, error) {
+        //             // Handle any errors that occur during the AJAX request
+        //             console.log(error);
+        //         }
+        //     });
+        // }
 
         // SHOW EDIT MODAL
         function edit(FileFolder, Filename, FileDescription, FilePath) {
