@@ -47,7 +47,7 @@
                                     <button type="button"
                                         onclick="edit('{{ $file->FileFolder }}','{{ $file->Filename }}','{{ $file->FileDescription }}','{{ $file->FilePath }}')"
                                         class="btn btn-info">Edit</button>
-                                    <button type="button" id="btnDelete" onclick="deleteData('{{$file->FileId}}')"
+                                    <button type="button" id="btnDelete" onclick="deleteData('{{ $file->FileId }}')"
                                         class=" btn btn-danger">Delete</button>
                                 </td>
                             </tr>
@@ -116,9 +116,44 @@
 @endsection
 @section('script')
     <script>
-        function saveEdit(){
+        function saveEdit() {
+            var Filefolder = $('#filefolder').val();
+            var Filename = $('.filename').val();
+            var FileDescription = $('.filedesc').val();
+            var FilePath = $('.filepath').val();
 
+            var student_Data = new FormData()
+            student_Data.append('Filefolder', Filefolder)
+            student_Data.append('Filename', Filename)
+            student_Data.append('FileDescription', FileDescription)
+            student_Data.append('FilePath', FilePath)
+
+            $.ajax({
+                method: "POST",
+                url: "{{ route('store') }}",
+                dataType: 'json',
+                processData: false,
+                contentType: false,
+                cache: false,
+                async: false,
+                data: student_Data,
+            }).done(function(msg) {
+                if (msg.result == true) {
+                    Swal.fire(
+                        'Update',
+                        msg.message,
+                        'success'
+                    )
+                } else {
+                    Swal.fire(
+                        'Update',
+                        msg.message,
+                        'error'
+                    )
+                }
+            });
         }
+
         function deleteData(FileId) {
             // alert("Button clicked!");
             var file_Data = new FormData()
