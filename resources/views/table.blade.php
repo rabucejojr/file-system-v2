@@ -116,7 +116,9 @@
 @endsection
 @section('script')
     <script>
+        function saveEdit(){
 
+        }
         function deleteData(FileId) {
             // alert("Button clicked!");
             var file_Data = new FormData()
@@ -161,10 +163,6 @@
                     });
                 }
             })
-        }
-
-        function saveEdit() {
-
         }
 
         // SHOW EDIT MODAL
