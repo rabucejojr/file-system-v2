@@ -164,13 +164,13 @@
         }
         // SAVE EDIT
         function saveEdit() {
-            var Filefolder = $('#filefolder').val();
+            var FileFolder = $('#filefolder').val();
             var Filename = $('.filename').val();
             var FileDescription = $('.filedesc').val();
             var FilePath = $('.filepath').val();
 
             var student_Data = new FormData()
-            student_Data.append('Filefolder', Filefolder)
+            student_Data.append('FileFolder', FileFolder)
             student_Data.append('Filename', Filename)
             student_Data.append('FileDescription', FileDescription)
             student_Data.append('FilePath', FilePath)
