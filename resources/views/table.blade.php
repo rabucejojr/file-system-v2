@@ -47,7 +47,7 @@
                                     <button type="button"
                                         onclick="edit('{{ $file->FileFolder }}','{{ $file->Filename }}','{{ $file->FileDescription }}','{{ $file->FilePath }}')"
                                         class="btn btn-info">Edit</button>
-                                    <button type="button" id="btnDelete" onclick="deleteData()"
+                                    <button type="button" id="btnDelete" onclick="deleteData('{{$file->FileId}}')"
                                         class=" btn btn-danger">Delete</button>
                                 </td>
                             </tr>
@@ -116,14 +116,6 @@
 @endsection
 @section('script')
     <script>
-        $(document).ready(function() {
-            $("#search").on("keyup", function() {
-                var value = $(this).val().toLowerCase();
-                $("#myTable tr").filter(function() {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-            });
-        });
 
         function deleteData(FileId) {
             // alert("Button clicked!");
