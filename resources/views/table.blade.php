@@ -169,11 +169,11 @@
             var FileDescription = $('.filedesc').val();
             var FilePath = $('.filepath').val();
 
-            var student_Data = new FormData()
-            student_Data.append('FileFolder', FileFolder)
-            student_Data.append('Filename', Filename)
-            student_Data.append('FileDescription', FileDescription)
-            student_Data.append('FilePath', FilePath)
+            var file_Data = new FormData()
+            file_Data.append('FileFolder', FileFolder)
+            file_Data.append('Filename', Filename)
+            file_Data.append('FileDescription', FileDescription)
+            file_Data.append('FilePath', FilePath)
 
             $.ajax({
                 method: "POST",
@@ -183,7 +183,7 @@
                 contentType: false,
                 cache: false,
                 async: false,
-                data: student_Data,
+                data: file_Data,
             }).done(function(msg) {
                 if (msg.result == true) {
                     Swal.fire(
