@@ -104,7 +104,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" onclick="save()" class="btn btn-primary">Save
+                                <button type="button" onclick="saveEdit()" class="btn btn-primary">Save
                                     changes</button>
                             </div>
                         </form>
@@ -171,6 +171,9 @@
             })
         }
 
+        function saveEdit(){
+            
+        }
 
         // SHOW EDIT MODAL
         function edit(FileFolder, Filename, FileDescription, FilePath) {
