@@ -69,7 +69,6 @@ class FileController extends Controller
             if (empty($r->FileDescription)) {
                 return view('upload')->with('Error', 'Description is required.');
             }
-
             // filteron ang fields for empty data
             $Filter = File::where('Filename', $r->Filename)
                 ->where('FileFolder', $r->FileFolder)

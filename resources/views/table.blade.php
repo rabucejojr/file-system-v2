@@ -45,7 +45,7 @@
                                 <td>{{ $file->FileDescription }}</td>
                                 <td>
                                     <button type="button"
-                                        onclick="edit('{{ $file->FileFolder }}','{{ $file->Filename }}','{{ $file->FileDescription }}','{{ $file->FilePath }}')"
+                                        onclick="edit('{{ $file->FileId }}','{{ $file->FileFolder }}','{{ $file->Filename }}','{{ $file->FileDescription }}','{{ $file->FilePath }}')"
                                         class="btn btn-info">Edit</button>
                                     <button type="button" id="btnDelete" onclick="deleteData('{{ $file->FileId }}')"
                                         class=" btn btn-danger">Delete</button>
@@ -76,6 +76,12 @@
                         {{-- FILE UPLOAD FORM --}}
                         <form method="POST" action="{{ route('store') }}">
                             @csrf
+                            {{-- ID --}}
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control id" id="floatingInput"
+                                    placeholder="Filename" name="Filename" disabled>
+                                <label for="floatingInput">ID</label>
+                            </div>
                             {{-- PROGRAM TYPE --}}
                             <select class="form-select mb-3" id="filefolder" aria-label="Default select example"
                                 name="FileFolder">
@@ -164,12 +170,14 @@
         }
         // SAVE EDIT
         function saveEdit() {
+            var FileId = $('.id').val();
             var FileFolder = $('#filefolder').val();
             var Filename = $('.filename').val();
             var FileDescription = $('.filedesc').val();
             var FilePath = $('.filepath').val();
 
             var file_Data = new FormData()
+            file_Data.append('FileId', FileId)
             file_Data.append('FileFolder', FileFolder)
             file_Data.append('Filename', Filename)
             file_Data.append('FileDescription', FileDescription)
@@ -201,9 +209,10 @@
             });
         }
         // SHOW EDIT MODAL
-        function edit(FileFolder, Filename, FileDescription, FilePath) {
+        function edit(FileId,FileFolder, Filename, FileDescription, FilePath) {
             // get inputs & display to modal fields
             $('#edit_file').modal('toggle');
+            $('.id').val(FileId);
             $('#filefolder').val(FileFolder);
             $('.filename').val(Filename);
             $('.filedesc').val(FileDescription);
