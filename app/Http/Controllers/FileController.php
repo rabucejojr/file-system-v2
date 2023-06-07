@@ -108,4 +108,18 @@ class FileController extends Controller
         }
         return json_encode($message);
     }
+
+    public function table2()
+    {
+        return view('table2');
+    }
+
+    public function fetchFiles()
+    {
+        $files = File::all();
+
+        return response()->json([
+            'files' => $files,
+        ]);
+    }
 }

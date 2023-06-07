@@ -26,3 +26,5 @@ Route::get('/upload', [FileController::class, 'upload'])->name('upload');
 Route::post('/store', [FileController::class, 'store'])->name('store');
 Route::post('/file/delete', [FileController::class, 'delete'])->name('delete');
 
+Route::get('/table2', [FileController::class, 'table2'])->name('file.table2');
+Route::get('/fetch-files', [FileController::class, 'fetchFiles'])->name('file.fetch');
