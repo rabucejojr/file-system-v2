@@ -47,7 +47,7 @@
                                     <button type="button"
                                         onclick="edit('{{ $file->FileFolder }}','{{ $file->Filename }}','{{ $file->FileDescription }}','{{ $file->FilePath }}')"
                                         class="btn btn-info">Edit</button>
-                                    <button type="button" id="btnDelete" onclick="Delete()"
+                                    <button type="button" id="btnDelete" onclick="deleteData()"
                                         class=" btn btn-danger">Delete</button>
                                 </td>
                             </tr>
@@ -125,26 +125,52 @@
             });
         });
 
-        // function Delete() {
-        //     var id = $(this).data(id); // Get the ID of the data to delete
-        //     $.ajax({
-        //         url: "{{route('delete')}}", // Replace with your server-side script URL
-        //         method: 'POST',
-        //         data: {
-        //             id: id
-        //         }, // Send the ID as a parameter
-        //         success: function(response) {
-        //             // Handle the response from the server
-        //             console.log(response);
-        //             // Perform any necessary UI updates
-        //             $(this).closest('tr').remove();
-        //         },
-        //         error: function(xhr, status, error) {
-        //             // Handle any errors that occur during the AJAX request
-        //             console.log(error);
-        //         }
-        //     });
-        // }
+        function deleteData(FileId) {
+            // alert("Button clicked!");
+            var file_Data = new FormData()
+            file_Data.append('FileId', FileId)
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+
+                    $.ajax({
+                        method: "POST",
+                        url: "{{ route('delete') }}",
+                        dataType: 'json',
+                        processData: false,
+                        contentType: false,
+                        cache: false,
+                        async: false,
+                        data: file_Data,
+                    }).done(function(msg) {
+                        if (msg.result == true) {
+                            Swal.fire(
+                                'Delete',
+                                msg.message,
+                                'success'
+                            )
+                            setTimeout(function() {
+                                window.location.reload();
+                            }, 2000);
+                        } else {
+                            Swal.fire(
+                                'Delete',
+                                msg.message,
+                                'error'
+                            )
+                        }
+                    });
+                }
+            })
+        }
+
 
         // SHOW EDIT MODAL
         function edit(FileFolder, Filename, FileDescription, FilePath) {
