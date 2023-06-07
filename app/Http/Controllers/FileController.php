@@ -7,20 +7,23 @@ use Illuminate\Http\Request;
 
 class FileController extends Controller
 {
-
+    // SHOW DATA TO TABLE
     public function table()
     {
         $files = File::all();
         return view('table', compact('files'));
     }
+    // DASHBOARD WITH DUMMY CHARTS AND DATA
     public function dashboard()
     {
         return view('dashboard');
     }
+    // UPLOAD DATA
     public function upload()
     {
         return view('upload');
     }
+    // SAVE DATA TO DB
     public function store(Request $r)
     {
         $id = $r->FileId;
@@ -85,6 +88,7 @@ class FileController extends Controller
             }
         }
     }
+    // DELETE DATA FROM DB
     public function delete(Request $r)
     {
         $id = $r->FileId;
