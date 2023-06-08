@@ -13,16 +13,19 @@ class FileController extends Controller
         $files = File::all();
         return view('table', compact('files'));
     }
+
     // DASHBOARD WITH DUMMY CHARTS AND DATA
     public function dashboard()
     {
         return view('dashboard');
     }
+
     // UPLOAD DATA
     public function upload()
     {
         return view('upload');
     }
+
     // SAVE DATA TO DB
     public function store(Request $r)
     {
@@ -87,6 +90,7 @@ class FileController extends Controller
             }
         }
     }
+
     // DELETE DATA FROM DB
     public function delete(Request $r)
     {
@@ -158,6 +162,24 @@ class FileController extends Controller
             return response()->json([
                 'status' => 200,
                 'message' => 'Updated Successfully.'
+            ]);
+        } else {
+            return response()->json([
+                'status' => 404,
+                'message' => 'Not Found.'
+            ]);
+        }
+    }
+
+    public function destroy($id)
+    {
+        $file = File::find($id);
+
+        if ($file) {
+            $file->delete();
+            return response()->json([
+                'status' => 200,
+                'message' => 'Deleted Successfully.'
             ]);
         } else {
             return response()->json([

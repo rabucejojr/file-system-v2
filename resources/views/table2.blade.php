@@ -77,6 +77,33 @@
             </div>
         </div>
     </div>
+
+    {{-- Delete Modal --}}
+    <div class="modal fade" id="DeleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                    <h5 class="modal-title text-white" id="exampleModalLabel"><i
+                            class="fa-solid fa-trash fa-shake m-1"></i>Delete Data</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <form action="#" method="POST" id="delete_file_form" enctype="multipart/form-data">
+                    @csrf
+                    @method('DELETE')
+                    <div class="modal-body">
+                        <h6>Are you sure you want to delete this?</h6>
+                        <input type="hidden" id="del_id" name="del_id">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-danger btn-sm" id="delete_file"><i
+                                class="fa-solid fa-trash fa-beat-fade m-1"></i>Yes, delete it!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @section('script')
@@ -100,7 +127,7 @@
                             const editBtn = '<button type="button" value="' + item.FileId +
                                 '" class="btn btn-primary btn-sm edit_file_btn"><i class="fa-solid fa-pen-to-square m-1"></i>Edit</button>';
                             const deleteBtn = '<button type="button" value="' + item.FileId +
-                                '" class="btn btn-danger btn-sm delete_cat_btn" ><i class="fa-solid fa-trash m-1"></i>Delete</button>';
+                                '" class="btn btn-danger btn-sm delete_file_btn" ><i class="fa-solid fa-trash m-1"></i>Delete</button>';
 
                             table.row.add([
                                 item.FileId,
@@ -151,7 +178,7 @@
 
                 $.ajax({
                         type: "POST",
-                        url: "/file/update/" + ids,
+                        url: "/file/update/" + id,
                         data: data,
                         cache: false,
                         contentType: false,
@@ -185,6 +212,42 @@
                         $.each(error.responseJSON.errors, function(key, err_value) {
                             $('#update_status').append('<li>' + err_value + '</li>');
                         });
+                    });
+            });
+
+            // DELETE
+            $(document).on('click', '.delete_file_btn', function() {
+                let id = $(this).val();
+                $('#DeleteModal').modal('show');
+                $('#del_id').val(id);
+            });
+
+            $(document).on('submit', '#delete_file_form', function(e) {
+                e.preventDefault();
+
+                $('#delete_file').text('Deleting...');
+                let id = $('#del_id').val();
+
+                $.ajax({
+                        type: "DELETE",
+                        url: "/file/delete/" + id,
+                        dataType: "json"
+                    })
+                    .then(function(res) {
+                        console.log(res)
+                        Swal.fire(
+                            'Delete',
+                            res.message,
+                            'success'
+                        )
+                        $('#delete_file').text('Yes Delete');
+                        $('#DeleteModal').modal('hide');
+
+                        // Fetch Data to avoid page reload
+                        fetchData();
+                    })
+                    .catch(function(error) {
+                        console.error(error);
                     });
             });
         });
