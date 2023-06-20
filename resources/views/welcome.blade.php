@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DOST-SDN</title>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('dist/css/style.css')}}">
+    <link rel="stylesheet" href="{{ asset('dist/css/style.css') }}">
     <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
@@ -37,8 +37,10 @@
                             <div class="hero-copy">
                                 {{-- <h2 class="hero-title mt-0">Welcome, User</h2> --}}
                                 <h1 class="hero-paragraph">DOST-SDN :: File Management System</h2>
-                                    <div class="hero-cta"><a class="button button-primary" href="#">Login</a><a
-                                            class="button" href="#">Register</a></div>
+                                    <div class="hero-cta">
+                                        <a class="button button-primary" href="#">Login</a>
+                                        <a class="button" href="#">Register</a>
+                                    </div>
                             </div>
                             <div class="hero-figure anime-element">
                                 <svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
@@ -131,7 +133,7 @@
             </footer>
         </div>
 
-        <script src="{{asset('dist/js/main.min.js')}}"></script>
+        <script src="{{ asset('dist/js/main.min.js') }}"></script>
 
 
     </body>
