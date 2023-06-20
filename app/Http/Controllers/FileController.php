@@ -115,7 +115,7 @@ class FileController extends Controller
 
     public function table2()
     {
-        return view('table2');
+        return view('table');
     }
 
     public function fetchFiles()
