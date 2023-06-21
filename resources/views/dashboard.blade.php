@@ -24,7 +24,7 @@
                         </div>
                     </div>
                 </form>
-                <div>
+                <div class="h-50">
                     <x-app-layout>
                     </x-app-layout>
                 </div>
