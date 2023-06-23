@@ -35,7 +35,7 @@
             <div class="container-fluid">
 
                 <!-- Content Row -->
-                <div class="row">
+                {{-- <div class="row">
 
                     <!-- Earnings (Monthly) Card Example -->
                     <div class="col-xl-3 col-md-6 mb-4">
@@ -66,7 +66,7 @@
                                         <div class="h5 mb-0 font-weight-bold text-gray-800">PHP 215,000</div>
                                     </div>
                                     <div class="col-auto">
-                                        {{-- <i class="fas fa-peso-sign fa-2x text-gray-300"></i> --}}
+                                        {{-- <i class="fas fa-peso-sign fa-2x text-gray-300"></i> 
                                         <i class="fas fa-peso-sign fa-2x text-gray-300"></i>
                                     </div>
                                 </div>
@@ -119,7 +119,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--}}
 
                 <!-- Content Row -->
 
