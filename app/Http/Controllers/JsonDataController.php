@@ -11,12 +11,16 @@ class JsonDataController extends Controller
     //
     public function fetchData(Request $request)
     {
-        // filter value
-        $filterValue = $request->input('filter');
-
         // fetch json data from mysql
         $jsonData = DB::table('files')->select('FileFolder')->get()->pluck('FileFolder');
-        $filteredData = $jsonData->toArray();
-        return response()->json($filteredData);
+        // to array
+        $jsonArray = collect($jsonData)->toArray();
+        // return, categories counted
+        $countedValues = collect($jsonArray)->groupBy(function($item){
+            return $item;
+        })->map(function($item){
+            return count($item);
+        })->toArray();
+        return response()->json($countedValues);
     }
 }
