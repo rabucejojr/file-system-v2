@@ -13,9 +13,9 @@ class JsonDataController extends Controller
     {
         // filter value
         $filterValue = $request->input('filter');
-        
+
         // fetch json data from mysql
-        $jsonData = DB::table('files')->where('FileFolder->FileFolder',$filterValue)->get();
+        $jsonData = DB::table('files')->select('FileFolder->FileFolder')->where('FileFolder', $filterValue)->get();
         return response()->json($jsonData);
     }
 }
