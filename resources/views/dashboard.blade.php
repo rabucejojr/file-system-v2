@@ -69,19 +69,26 @@
                             <li data-target="#carouselExample" data-slide-to="1"></li>
                             <li data-target="#carouselExample" data-slide-to="2"></li>
                             <li data-target="#carouselExample" data-slide-to="3"></li>
+                            <li data-target="#carouselExample" data-slide-to="4"></li>
+                            <li data-target="#carouselExample" data-slide-to="5"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="/img/dost.png" class="d-block w-80" alt="Image 1">
+                                <img src="/img/dost.png" class="w-80" alt="Image 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="/img/dost1.jpg" class="d-block w-80" alt="Image 2">
+                                <img src="/img/dost1.jpg" class="w-80" alt="Image 2">
                             </div>
                             <div class="carousel-item">
-                                <img src="/img/dost2.jpg" class="d-block w-80" alt="Image 3">
+                                <img src="/img/dost2.jpg" class="w-80" alt="Image 3">
                             </div>
                             <div class="carousel-item">
-                                <img src="/img/dost3.jpg" class="d-block w-80" alt="Image 3">
+                                <img src="/img/dost3.jpg" class="w-80" alt="Image 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/img/dost4.jpg" class="w-80" alt="Image 5">
+                            </div><div class="carousel-item">
+                                <img src="/img/dost5.jpg" class="w-80" alt="Image 6">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
