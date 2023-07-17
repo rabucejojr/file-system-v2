@@ -59,15 +59,3 @@
     text-decoration: none;
 }
 
-#carouselExample {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.carousel-item{
-    text-align: center;
-}
-.carousel-inner {
-  display: flex;
-  justify-content: center;
-}
