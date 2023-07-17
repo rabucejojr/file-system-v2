@@ -26,7 +26,7 @@
 
                 <div class="row">
                     <!-- Pie Chart -->
-                    <div class="col-xl-6 col-lg-6">
+                    <div class="col-md-6 col-md-6">
                         <div class="card shadow mb-4">
                             <!-- Card Header - Dropdown -->
                             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
@@ -61,9 +61,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6">
+                    {{-- Carousel --}}
+                     <div class="col-md-6 col-md-6">
                         <div id="carouselExample" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
@@ -103,6 +102,9 @@
                             </a>
                         </div>
                     </div>
+                </div>
+                <div class="row">
+                   
                 </div>
             </div>
         </div>
