@@ -111,10 +111,10 @@
             {{-- CARD display for FB Press Release --}}
 
             {{-- SETUP --}}
-            <div class="font-mono text-lg text-center">
-                <h1 class="font-bold"> Small Enterprise Technology Upgrading Program </h1>
-                <p>Boosting SMEs with Tech Innovation: DOST's SETUP for Productivity & Competitiveness</p>
-                <div class="flex items-center justify-center">
+            <div class="font-sans text-lg text-center">
+                <h1 class="font-bold p-2"> Small Enterprise Technology Upgrading Program </h1>
+                <p class="p-2">Boosting SMEs with Tech Innovation: DOST's SETUP for Productivity & Competitiveness</p>
+                <div class="flex items-center justify-center p-2">
                     <div class="flex flex-cols gap-8">
                         <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
                             <img class="w-auto h-90 object-cover" src="/img/dost2.jpg" alt="Card Image">
@@ -138,8 +138,9 @@
                 </div>
                 {{-- End of SETUP --}}
                 {{-- GIA --}}
-                <h1 class="font-bold">Grands-in-Aid</h1>
-                <div class="flex items-center justify-center">
+                <h1 class="font-bold p-2">Grants-in-Aid</h1>
+                <p class="p-2">Empowering Filipinos Through Technology: Advancing Productivity and Quality of Life with Innovative Research and Development</p>
+                <div class="flex items-center justify-center p-2">
                     <div class="flex flex-cols gap-8">
                         <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
                             <img class="w-auto h-90 object-cover" src="/img/dost4.jpg" alt="Card Image">
@@ -162,7 +163,8 @@
                 {{-- End of GIA --}}
                 {{-- Consultancy --}}
                 <h1 class="font-bold">Research, Development and Extension</h1>
-                <div class="flex items-center justify-center">
+                <p class="p-2">Fostering Growth Through Research, Development, and Extension: DOST's Commitment to Advancement</p>
+                <div class="flex items-center justify-center p-2">
                     <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
                         <img class="w-auto h-90 object-cover" src="/img/dost3.jpg" alt="Card Image">
                         <div class="px-6 py-4">
