@@ -23,10 +23,10 @@
             <!-- Begin Page Content -->
 
             {{-- Chart --}}
-            {{-- <div class="container-fluid">
-                <div class="row">
+            <div class="container-fluid p-20">
+                <div class="row justify-center">
                     <!-- Pie Chart -->
-                    <div class="col-xl-12 col-lg-12">
+                    <div class="col-xl-8 col-lg-8">
                         <div class="card shadow mb-4">
                             <!-- Card Header - Dropdown -->
                             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
@@ -62,10 +62,10 @@
                         </div>
                     </div>
                 </div>
-            </div> --}}
+            </div>
 
             {{-- Carousel --}}
-            {{-- <div class="row">
+            <div class="row p-20">
                 <div class="col-xl-12 col-lg-12">
                     <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="3000">
                         <ol class="carousel-indicators">
@@ -106,11 +106,9 @@
                         </a>
                     </div>
                 </div>
-            </div> --}}
+            </div>
 
             {{-- CARD display for FB Press Release --}}
-
-
             <div class="font-sans text-lg text-center">
                 {{-- SETUP --}}
                 <h1 class="font-bold pt-2 text-xl"> Small Enterprise Technology Upgrading Program </h1>
@@ -182,7 +180,7 @@
                 </div>
                 {{-- End of SETUP --}}
                 {{-- GIA --}}
-                <h1 class="font-bold pt-2">Grants-in-Aid</h1>
+                <h1 class="font-bold pt-10">Grants-in-Aid</h1>
                 <p class="p-2">Empowering Filipinos Through Technology: Advancing Productivity and Quality of Life with
                     Innovative Research and Development</p>
                 <div class="flex items-center justify-center p-2">
@@ -242,10 +240,12 @@
                 </div>
                 {{-- End of GIA --}}
                 {{-- Consultancy --}}
-                <h1 class="font-bold pt-2">Research, Development and Extension</h1>
+                <h1 class="font-bold pt-10">Research, Development and Extension</h1>
                 <p class="p-2">Fostering Growth Through Research, Development, and Extension: DOST's Commitment to
                     Advancement</p>
                 <div class="flex items-center justify-center p-2">
+                    <div class="flex flex-cols gap-8">
+                        {{-- first rnd featured --}}
                     <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
                         <img class="w-auto h-90 object-cover" src="/img/dost3.jpg" alt="Card Image">
                         <div class="px-6 py-4">
@@ -262,6 +262,43 @@
                                 class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
                                 #SNSU</p>
                         </div>
+                    </div>
+                    {{-- second rnd featured --}}
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                        <img class="w-auto h-90 object-cover" src="/img/dost3.jpg" alt="Card Image">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2"><a href="https://bit.ly/3q2QPF7" target="_blank">𝐃𝐎𝐒𝐓
+                                    𝐨𝐫𝐠𝐚𝐧𝐢𝐳𝐞𝐬
+                                    𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡, 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭, 𝐚𝐧𝐝 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧
+                                    𝐂𝐨𝐧𝐬𝐮𝐥𝐭𝐚𝐭𝐢𝐨𝐧 𝐂𝐚𝐫𝐚𝐯𝐚𝐧 𝐚𝐭 𝐒𝐮𝐫𝐢𝐠𝐚𝐨 𝐝𝐞𝐥 𝐍𝐨𝐫𝐭𝐞
+                                    𝐒𝐭𝐚𝐭𝐞
+                                    𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲</a></div>
+                            <p
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                #DOSTCaraga</p>
+                            <p
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                #SNSU</p>
+                        </div>
+                    </div>
+                    {{-- third rnd featured --}}
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                        <img class="w-auto h-90 object-cover" src="/img/dost3.jpg" alt="Card Image">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2"><a href="https://bit.ly/3q2QPF7" target="_blank">𝐃𝐎𝐒𝐓
+                                    𝐨𝐫𝐠𝐚𝐧𝐢𝐳𝐞𝐬
+                                    𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡, 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭, 𝐚𝐧𝐝 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧
+                                    𝐂𝐨𝐧𝐬𝐮𝐥𝐭𝐚𝐭𝐢𝐨𝐧 𝐂𝐚𝐫𝐚𝐯𝐚𝐧 𝐚𝐭 𝐒𝐮𝐫𝐢𝐠𝐚𝐨 𝐝𝐞𝐥 𝐍𝐨𝐫𝐭𝐞
+                                    𝐒𝐭𝐚𝐭𝐞
+                                    𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲</a></div>
+                            <p
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                #DOSTCaraga</p>
+                            <p
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                #SNSU</p>
+                        </div>
+                    </div>
                     </div>
                 </div>
                 {{-- End of Consultancy --}}
