@@ -187,6 +187,41 @@
                     Innovative Research and Development</p>
                 <div class="flex items-center justify-center p-2">
                     <div class="flex flex-cols gap-8">
+                        {{-- first gia featured --}}
+                        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                            <img class="w-auto h-90 object-cover" src="/img/dost4.jpg" alt="Card Image">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2"><a href="https://bit.ly/44VPcb5">𝐃𝐎𝐒𝐓-𝐒𝐃𝐍
+                                        𝐦𝐨𝐧𝐢𝐭𝐨𝐫𝐬 𝐌𝐏𝐄𝐗 𝐜𝐥𝐢𝐞𝐧𝐭𝐬, 𝐬𝐞𝐞𝐬 𝐬𝐢𝐠𝐧𝐢𝐟𝐢𝐜𝐚𝐧𝐭
+                                        𝐢𝐦𝐩𝐫𝐨𝐯𝐞𝐦𝐞𝐧𝐭𝐬</a></div>
+                                <p
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                    #MPEX
+                                </p>
+                                <p
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                    #ConsultancyService
+                                </p>
+                            </div>
+                        </div>
+                        {{-- second gia featured --}}
+                        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                            <img class="w-auto h-90 object-cover" src="/img/dost4.jpg" alt="Card Image">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2"><a href="https://bit.ly/44VPcb5">𝐃𝐎𝐒𝐓-𝐒𝐃𝐍
+                                        𝐦𝐨𝐧𝐢𝐭𝐨𝐫𝐬 𝐌𝐏𝐄𝐗 𝐜𝐥𝐢𝐞𝐧𝐭𝐬, 𝐬𝐞𝐞𝐬 𝐬𝐢𝐠𝐧𝐢𝐟𝐢𝐜𝐚𝐧𝐭
+                                        𝐢𝐦𝐩𝐫𝐨𝐯𝐞𝐦𝐞𝐧𝐭𝐬</a></div>
+                                <p
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                    #MPEX
+                                </p>
+                                <p
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                    #ConsultancyService
+                                </p>
+                            </div>
+                        </div>
+                        {{-- third gia featured --}}
                         <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
                             <img class="w-auto h-90 object-cover" src="/img/dost4.jpg" alt="Card Image">
                             <div class="px-6 py-4">
