@@ -1,12 +1,12 @@
 @extends('partials.app')
 @section('content')
-    <div id="content-wrapper" class="d-flex flex-column gradient-custom-3">
+    <div id="content-wrapper" class="gradient-custom-3">
 
         <!-- Main Content -->
         <div id="content">
             <!-- Topbar -->
             <nav
-                class="navbar navbar-expand navbar-light bg-white topbar mb-3 static-top shadow d-flex justify-content-end ">
+                class="relative flex flex-wrap items-center content-between py-3 px-2 flex-no-wrap content-start text-black bg-white topbar mb-2 static-top shadow flex justify-end">
 
                 <!-- Sidebar Toggle (Topbar) -->
                 <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -23,7 +23,7 @@
             <!-- Begin Page Content -->
 
             {{-- Chart --}}
-            <div class="container-fluid">
+            {{-- <div class="container-fluid">
                 <div class="row">
                     <!-- Pie Chart -->
                     <div class="col-xl-12 col-lg-12">
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             {{-- Carousel --}}
             {{-- <div class="row">
@@ -107,26 +107,65 @@
                     </div>
                 </div>
             </div> --}}
-            
+
             {{-- CARD display for FB Press Release --}}
-            <div class="container-fluid">
-                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-                    <img class="w-full h-48 object-cover" src="https://via.placeholder.com/300" alt="Card Image">
-                    <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">Card Title</div>
-                        <p class="text-gray-700 text-base">
-                            This is the content of the card. You can put any text or other elements here.
-                        </p>
+            <div class="flex items-center justify-center">
+                <div class="flex flex-cols gap-12">
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                        <img class="w-auto h-90 object-cover" src="/img/dost2.jpg" alt="Card Image">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">
+                                <a href="https://bit.ly/3rE8Gm9" target="_blank"> 𝐓𝐨𝐧𝐲𝐭𝐬 𝐅𝐨𝐨𝐝 𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬
+                                    𝐬𝐢𝐠𝐧𝐬 𝐌𝐎𝐀 𝐰𝐢𝐭𝐡 𝐃𝐎𝐒𝐓 𝐟𝐨𝐫 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲
+                                    𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐞𝐧𝐡𝐚𝐧𝐜𝐞𝐝 𝐩𝐫𝐨𝐝𝐮𝐜𝐭𝐢𝐯𝐢𝐭𝐲</a>
+                            </div>
+                            <p
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                #OneDOST4U
+                            </p>
+                            <p
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                #SETUP
+                            </p>
+                        </div>
                     </div>
-                    <div class="px-6 pt-4 pb-2">
-                        <span
-                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Tag1</span>
-                        <span
-                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#Tag2</span>
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                        <img class="w-auto h-90 object-cover" src="/img/dost3.jpg" alt="Card Image">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2"><a href="https://bit.ly/3q2QPF7" target="_blank">𝐃𝐎𝐒𝐓
+                                    𝐨𝐫𝐠𝐚𝐧𝐢𝐳𝐞𝐬
+                                    𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡, 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭, 𝐚𝐧𝐝 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧
+                                    𝐂𝐨𝐧𝐬𝐮𝐥𝐭𝐚𝐭𝐢𝐨𝐧 𝐂𝐚𝐫𝐚𝐯𝐚𝐧 𝐚𝐭 𝐒𝐮𝐫𝐢𝐠𝐚𝐨 𝐝𝐞𝐥 𝐍𝐨𝐫𝐭𝐞
+                                    𝐒𝐭𝐚𝐭𝐞
+                                    𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲</a></div>
+                            <p
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                #DOSTCaraga</p>
+                            <p
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                #SNSU</p>
+                        </div>
+                    </div>
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                        <img class="w-auto h-90 object-cover" src="/img/dost4.jpg" alt="Card Image">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2"><a href="https://bit.ly/44VPcb5">𝐃𝐎𝐒𝐓-𝐒𝐃𝐍
+                                    𝐦𝐨𝐧𝐢𝐭𝐨𝐫𝐬 𝐌𝐏𝐄𝐗 𝐜𝐥𝐢𝐞𝐧𝐭𝐬, 𝐬𝐞𝐞𝐬 𝐬𝐢𝐠𝐧𝐢𝐟𝐢𝐜𝐚𝐧𝐭
+                                    𝐢𝐦𝐩𝐫𝐨𝐯𝐞𝐦𝐞𝐧𝐭𝐬</a></div>
+                            <p
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                #MPEX
+                            </p>
+                            <p
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                #ConsultancyService
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End of Main Content -->
+    </div>
+    <!-- End of Main Content -->
     </div>
 @endsection
