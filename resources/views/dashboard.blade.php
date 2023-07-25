@@ -112,7 +112,7 @@
 
 
             <div class="font-sans text-lg text-center">
-
+                {{-- SETUP --}}
                 <h1 class="font-bold pt-2 text-xl"> Small Enterprise Technology Upgrading Program </h1>
                 <p class="p-2">Boosting SMEs with Tech Innovation: DOST's SETUP for Productivity & Competitiveness</p>
                 <div class="flex items-center justify-center p-2 gap-8">
