@@ -63,8 +63,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                {{-- Carousel --}}
+
+            {{-- Carousel --}}
+            {{-- <div class="row">
                 <div class="col-xl-12 col-lg-12">
                     <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="3000">
                         <ol class="carousel-indicators">
@@ -103,6 +104,25 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
+                    </div>
+                </div>
+            </div> --}}
+            
+            {{-- CARD display for FB Press Release --}}
+            <div class="container-fluid">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img class="w-full h-48 object-cover" src="https://via.placeholder.com/300" alt="Card Image">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Card Title</div>
+                        <p class="text-gray-700 text-base">
+                            This is the content of the card. You can put any text or other elements here.
+                        </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Tag1</span>
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#Tag2</span>
                     </div>
                 </div>
             </div>
