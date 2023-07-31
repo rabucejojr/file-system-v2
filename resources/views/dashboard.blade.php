@@ -115,71 +115,29 @@
                 <p class="p-2">Boosting SMEs with Tech Innovation: DOST's SETUP for Productivity & Competitiveness</p>
                 <div class="flex items-center justify-center p-2 gap-8">
                     {{-- first setup feature --}}
-                    <div class="flex flex-cols gap-8">
-                        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-                            <img class="w-auto h-90 object-cover" src="/img/dost2.jpg" alt="Card Image">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">
-                                    <a href="https://bit.ly/3rE8Gm9" target="_blank"> 𝐓𝐨𝐧𝐲𝐭𝐬 𝐅𝐨𝐨𝐝
-                                        𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬
-                                        𝐬𝐢𝐠𝐧𝐬 𝐌𝐎𝐀 𝐰𝐢𝐭𝐡 𝐃𝐎𝐒𝐓 𝐟𝐨𝐫 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲
-                                        𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐞𝐧𝐡𝐚𝐧𝐜𝐞𝐝 𝐩𝐫𝐨𝐝𝐮𝐜𝐭𝐢𝐯𝐢𝐭𝐲</a>
-                                </div>
-                                <p
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                                    #OneDOST4U
-                                </p>
-                                <p
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                                    #SETUP
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    @component('components.card', [
+                        'location' => '/img/setup1.jpg',
+                        'link' => 'https://bit.ly/3rE8Gm9',
+                        'title' => '𝐓𝐨𝐧𝐲𝐭𝐬 𝐅𝐨𝐨𝐝 𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬 𝐬𝐢𝐠𝐧𝐬 𝐌𝐎𝐀 𝐰𝐢𝐭𝐡 𝐃𝐎𝐒𝐓 𝐟𝐨𝐫 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲 𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐞𝐧𝐡𝐚𝐧𝐜𝐞𝐝 𝐩𝐫𝐨𝐝𝐮𝐜𝐭𝐢𝐯𝐢𝐭𝐲',
+                        'program' => '#SETUP',
+                    ])
+                    @endcomponent
                     {{-- second setup feature --}}
-                    <div class="flex flex-cols gap-8">
-                        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-                            <img class="w-auto h-90 object-cover" src="/img/dost2.jpg" alt="Card Image">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">
-                                    <a href="https://bit.ly/3rE8Gm9" target="_blank"> 𝐓𝐨𝐧𝐲𝐭𝐬 𝐅𝐨𝐨𝐝
-                                        𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬
-                                        𝐬𝐢𝐠𝐧𝐬 𝐌𝐎𝐀 𝐰𝐢𝐭𝐡 𝐃𝐎𝐒𝐓 𝐟𝐨𝐫 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲
-                                        𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐞𝐧𝐡𝐚𝐧𝐜𝐞𝐝 𝐩𝐫𝐨𝐝𝐮𝐜𝐭𝐢𝐯𝐢𝐭𝐲</a>
-                                </div>
-                                <p
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                                    #OneDOST4U
-                                </p>
-                                <p
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                                    #SETUP
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    @component('components.card', [
+                        'location' => '/img/setup1.jpg',
+                        'link' => 'https://bit.ly/3rE8Gm9',
+                        'title' => '𝐓𝐨𝐧𝐲𝐭𝐬 𝐅𝐨𝐨𝐝 𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬 𝐬𝐢𝐠𝐧𝐬 𝐌𝐎𝐀 𝐰𝐢𝐭𝐡 𝐃𝐎𝐒𝐓 𝐟𝐨𝐫 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲 𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐞𝐧𝐡𝐚𝐧𝐜𝐞𝐝 𝐩𝐫𝐨𝐝𝐮𝐜𝐭𝐢𝐯𝐢𝐭𝐲',
+                        'program' => '#SETUP',
+                    ])
+                    @endcomponent
                     {{-- third setup feature --}}
-                    <div class="flex flex-cols gap-8">
-                        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-                            <img class="w-auto h-90 object-cover" src="/img/dost2.jpg" alt="Card Image">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2">
-                                    <a href="https://bit.ly/3rE8Gm9" target="_blank"> 𝐓𝐨𝐧𝐲𝐭𝐬 𝐅𝐨𝐨𝐝
-                                        𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬
-                                        𝐬𝐢𝐠𝐧𝐬 𝐌𝐎𝐀 𝐰𝐢𝐭𝐡 𝐃𝐎𝐒𝐓 𝐟𝐨𝐫 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲
-                                        𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐞𝐧𝐡𝐚𝐧𝐜𝐞𝐝 𝐩𝐫𝐨𝐝𝐮𝐜𝐭𝐢𝐯𝐢𝐭𝐲</a>
-                                </div>
-                                <p
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                                    #OneDOST4U
-                                </p>
-                                <p
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                                    #SETUP
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    @component('components.card', [
+                        'location' => '/img/setup1.jpg',
+                        'link' => 'https://bit.ly/3rE8Gm9',
+                        'title' => '𝐓𝐨𝐧𝐲𝐭𝐬 𝐅𝐨𝐨𝐝 𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬 𝐬𝐢𝐠𝐧𝐬 𝐌𝐎𝐀 𝐰𝐢𝐭𝐡 𝐃𝐎𝐒𝐓 𝐟𝐨𝐫 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲 𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐞𝐧𝐡𝐚𝐧𝐜𝐞𝐝 𝐩𝐫𝐨𝐝𝐮𝐜𝐭𝐢𝐯𝐢𝐭𝐲',
+                        'program' => '#SETUP',
+                    ])
+                    @endcomponent
                 </div>
                 {{-- End of SETUP --}}
                 {{-- GIA --}}
