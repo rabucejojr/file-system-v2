@@ -2,8 +2,8 @@
 @section('content')
     <section class=" bg-image "
         style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp'); width:100%">
-        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
-            <div class="container h-100">
+        <div class="mask flex items-center h-100 gradient-custom-3">
+            <div class="container mx-auto h-100 sm:px-4 h-full">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                         <div class="card" style="border-radius: 15px;">
@@ -48,6 +48,7 @@
                                     <div class="text-center">
                                         <button type="submit" class="btn btn-primary ">Upload</button>
                                     </div>
+                                    {{-- revised form --}}
 
                                 </form>
 
