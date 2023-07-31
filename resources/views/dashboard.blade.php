@@ -144,16 +144,16 @@
                 <h1 class="font-bold pt-10">Grants-in-Aid</h1>
                 <p class="p-2">Empowering Filipinos Through Technology: Advancing Productivity and Quality of Life with
                     Innovative Research and Development</p>
-                <div class="flex items-center justify-center p-2">
+                <div class="flex items-center justify-center p-2 gap-8">
                     <div class="flex flex-cols gap-8">
                         {{-- first gia featured --}}
                         @component('components.card', [
                             'location' => '/img/gia1.jpg',
                             'link' => 'https://bit.ly/44VPcb5',
                             'title' => '𝐃𝐎𝐒𝐓 𝐭𝐮𝐫𝐧𝐬
-                                        𝐨𝐯𝐞𝐫 𝐂𝐚𝐬𝐬𝐚𝐯𝐚 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠 𝐅𝐚𝐜𝐢𝐥𝐢𝐭𝐲, 𝐬𝐩𝐚𝐫𝐤𝐬
-                                        𝐬𝐨𝐜𝐢𝐨𝐞𝐜𝐨𝐧𝐨𝐦𝐢𝐜 𝐠𝐫𝐨𝐰𝐭𝐡 𝐢𝐧 𝐜𝐨𝐧𝐟𝐥𝐢𝐜𝐭-𝐚𝐟𝐟𝐞𝐜𝐭𝐞𝐝
-                                        𝐜𝐨𝐦𝐦𝐮𝐧𝐢𝐭𝐲',
+                                                                𝐨𝐯𝐞𝐫 𝐂𝐚𝐬𝐬𝐚𝐯𝐚 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠 𝐅𝐚𝐜𝐢𝐥𝐢𝐭𝐲, 𝐬𝐩𝐚𝐫𝐤𝐬
+                                                                𝐬𝐨𝐜𝐢𝐨𝐞𝐜𝐨𝐧𝐨𝐦𝐢𝐜 𝐠𝐫𝐨𝐰𝐭𝐡 𝐢𝐧 𝐜𝐨𝐧𝐟𝐥𝐢𝐜𝐭-𝐚𝐟𝐟𝐞𝐜𝐭𝐞𝐝
+                                                                𝐜𝐨𝐦𝐦𝐮𝐧𝐢𝐭𝐲',
                             'program' => '#GIA',
                         ])
                         @endcomponent
@@ -162,9 +162,9 @@
                             'location' => '/img/gia2.jpg',
                             'link' => 'https://bit.ly/44VPcb5',
                             'title' => '𝐃𝐎𝐒𝐓-𝐒𝐃𝐍
-                                        𝐟𝐨𝐫𝐠𝐞𝐬 𝐌𝐎𝐀 𝐰𝐢𝐭𝐡 𝐋𝐆𝐔-𝐌𝐚𝐢𝐧𝐢𝐭 𝐭𝐨 𝐩𝐫𝐨𝐦𝐨𝐭𝐞
-                                        𝐢𝐧𝐝𝐢𝐠𝐞𝐧𝐨𝐮𝐬 𝐝𝐞𝐥𝐢𝐜𝐚𝐜𝐢𝐞𝐬 𝐭𝐡𝐫𝐨𝐮𝐠𝐡 𝐢𝐧𝐧𝐨𝐯𝐚𝐭𝐢𝐯𝐞
-                                        𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐢𝐞𝐬',
+                                                                𝐟𝐨𝐫𝐠𝐞𝐬 𝐌𝐎𝐀 𝐰𝐢𝐭𝐡 𝐋𝐆𝐔-𝐌𝐚𝐢𝐧𝐢𝐭 𝐭𝐨 𝐩𝐫𝐨𝐦𝐨𝐭𝐞
+                                                                𝐢𝐧𝐝𝐢𝐠𝐞𝐧𝐨𝐮𝐬 𝐝𝐞𝐥𝐢𝐜𝐚𝐜𝐢𝐞𝐬 𝐭𝐡𝐫𝐨𝐮𝐠𝐡 𝐢𝐧𝐧𝐨𝐯𝐚𝐭𝐢𝐯𝐞
+                                                                𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐢𝐞𝐬',
                             'program' => '#GIA',
                         ])
                         @endcomponent
@@ -173,72 +173,29 @@
                     </div>
                 </div>
                 {{-- End of GIA --}}
-                {{-- Consultancy --}}
+                {{-- Start of RND --}}
                 <h1 class="font-bold pt-10">Research, Development and Extension</h1>
                 <p class="p-2">Fostering Growth Through Research, Development, and Extension: DOST's Commitment to
                     Advancement</p>
-                <div class="flex items-center justify-center p-2">
-                    <div class="flex flex-cols gap-8">
-                        {{-- first rnd featured --}}
-                        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-                            <img class="w-auto h-90 object-cover" src="/img/dost3.jpg" alt="Card Image">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2"><a href="https://bit.ly/3q2QPF7"
-                                        target="_blank">𝐃𝐎𝐒𝐓
-                                        𝐨𝐫𝐠𝐚𝐧𝐢𝐳𝐞𝐬
-                                        𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡, 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭, 𝐚𝐧𝐝 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧
-                                        𝐂𝐨𝐧𝐬𝐮𝐥𝐭𝐚𝐭𝐢𝐨𝐧 𝐂𝐚𝐫𝐚𝐯𝐚𝐧 𝐚𝐭 𝐒𝐮𝐫𝐢𝐠𝐚𝐨 𝐝𝐞𝐥 𝐍𝐨𝐫𝐭𝐞
-                                        𝐒𝐭𝐚𝐭𝐞
-                                        𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲</a></div>
-                                <p
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                                    #DOSTCaraga</p>
-                                <p
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                                    #SNSU</p>
-                            </div>
-                        </div>
-                        {{-- second rnd featured --}}
-                        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-                            <img class="w-auto h-90 object-cover" src="/img/dost3.jpg" alt="Card Image">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2"><a href="https://bit.ly/3q2QPF7"
-                                        target="_blank">𝐃𝐎𝐒𝐓
-                                        𝐨𝐫𝐠𝐚𝐧𝐢𝐳𝐞𝐬
-                                        𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡, 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭, 𝐚𝐧𝐝 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧
-                                        𝐂𝐨𝐧𝐬𝐮𝐥𝐭𝐚𝐭𝐢𝐨𝐧 𝐂𝐚𝐫𝐚𝐯𝐚𝐧 𝐚𝐭 𝐒𝐮𝐫𝐢𝐠𝐚𝐨 𝐝𝐞𝐥 𝐍𝐨𝐫𝐭𝐞
-                                        𝐒𝐭𝐚𝐭𝐞
-                                        𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲</a></div>
-                                <p
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                                    #DOSTCaraga</p>
-                                <p
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                                    #SNSU</p>
-                            </div>
-                        </div>
-                        {{-- third rnd featured --}}
-                        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-                            <img class="w-auto h-90 object-cover" src="/img/dost3.jpg" alt="Card Image">
-                            <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2"><a href="https://bit.ly/3q2QPF7"
-                                        target="_blank">𝐃𝐎𝐒𝐓
-                                        𝐨𝐫𝐠𝐚𝐧𝐢𝐳𝐞𝐬
-                                        𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡, 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭, 𝐚𝐧𝐝 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧
-                                        𝐂𝐨𝐧𝐬𝐮𝐥𝐭𝐚𝐭𝐢𝐨𝐧 𝐂𝐚𝐫𝐚𝐯𝐚𝐧 𝐚𝐭 𝐒𝐮𝐫𝐢𝐠𝐚𝐨 𝐝𝐞𝐥 𝐍𝐨𝐫𝐭𝐞
-                                        𝐒𝐭𝐚𝐭𝐞
-                                        𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲</a></div>
-                                <p
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                                    #DOSTCaraga</p>
-                                <p
-                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                                    #SNSU</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="flex items-center justify-center p-2 gap-8">
+                    {{-- first rnd --}}
+                    @component('components.card', [
+                        'location' => '/img/dost3.jpg',
+                        'link' => 'https://bit.ly/3q2QPF7',
+                        'title' => '𝐃𝐎𝐒𝐓 𝐨𝐫𝐠𝐚𝐧𝐢𝐳𝐞𝐬 𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡, 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭, 𝐚𝐧𝐝 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧 𝐂𝐨𝐧𝐬𝐮𝐥𝐭𝐚𝐭𝐢𝐨𝐧 𝐂𝐚𝐫𝐚𝐯𝐚𝐧 𝐚𝐭 𝐒𝐮𝐫𝐢𝐠𝐚𝐨 𝐝𝐞𝐥 𝐍𝐨𝐫𝐭𝐞 𝐒𝐭𝐚𝐭𝐞 𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲',
+                        'program' => '#R%D',
+                    ])
+                    @endcomponent
+                    {{-- second rnd --}}
+                    @component('components.card', [
+                        'location' => '/img/dost3.jpg',
+                        'link' => 'https://bit.ly/3q2QPF7',
+                        'title' => '𝐃𝐎𝐒𝐓 𝐨𝐫𝐠𝐚𝐧𝐢𝐳𝐞𝐬 𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡, 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭, 𝐚𝐧𝐝 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧 𝐂𝐨𝐧𝐬𝐮𝐥𝐭𝐚𝐭𝐢𝐨𝐧 𝐂𝐚𝐫𝐚𝐯𝐚𝐧 𝐚𝐭 𝐒𝐮𝐫𝐢𝐠𝐚𝐨 𝐝𝐞𝐥 𝐍𝐨𝐫𝐭𝐞 𝐒𝐭𝐚𝐭𝐞 𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲',
+                        'program' => '#R%D',
+                    ])
+                    @endcomponent
                 </div>
-                {{-- End of Consultancy --}}
+                {{-- End of RND --}}
             </div>
         </div>
     </div>
