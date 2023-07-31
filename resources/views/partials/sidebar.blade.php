@@ -1,7 +1,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="https://www.facebook.com/DOSTSDN" target="_blank">
 
                 <div class="sidebar-brand-text mx-3 mt-4">
                     <h3>DOST-SDN FMS</h3>
@@ -26,13 +26,6 @@
                     <span>Upload</span>
                 </a>
             </li>
-
-            <!-- Nav Item - Tables -->
-            {{-- <li class="nav-item">
-                <a class="nav-link" href="{{ route('table') }}">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
-            </li> --}}
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('file.table2') }}">
                     <i class="fas fa-fw fa-table"></i>
