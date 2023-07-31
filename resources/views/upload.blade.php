@@ -48,10 +48,7 @@
                                     <div class="text-center">
                                         <button type="submit" class="btn btn-primary ">Upload</button>
                                     </div>
-                                    {{-- revised form --}}
-
                                 </form>
-
                             </div>
                         </div>
                     </div>
