@@ -124,17 +124,17 @@
                     @endcomponent
                     {{-- second setup feature --}}
                     @component('components.card', [
-                        'location' => '/img/setup1.jpg',
-                        'link' => 'https://bit.ly/3rE8Gm9',
-                        'title' => '𝐓𝐨𝐧𝐲𝐭𝐬 𝐅𝐨𝐨𝐝 𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬 𝐬𝐢𝐠𝐧𝐬 𝐌𝐎𝐀 𝐰𝐢𝐭𝐡 𝐃𝐎𝐒𝐓 𝐟𝐨𝐫 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲 𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐞𝐧𝐡𝐚𝐧𝐜𝐞𝐝 𝐩𝐫𝐨𝐝𝐮𝐜𝐭𝐢𝐯𝐢𝐭𝐲',
+                        'location' => '/img/setup2.jpg',
+                        'link' => 'https://tinyurl.com/msz2sfx2',
+                        'title' => '𝐅𝐄𝐋 𝐁𝐚𝐤𝐞𝐬𝐡𝐨𝐩: 𝐀 𝐒𝐄𝐓𝐔𝐏 𝐒𝐮𝐜𝐜𝐞𝐬𝐬 𝐒𝐭𝐨𝐫𝐲',
                         'program' => '#SETUP',
                     ])
                     @endcomponent
                     {{-- third setup feature --}}
                     @component('components.card', [
-                        'location' => '/img/setup1.jpg',
-                        'link' => 'https://bit.ly/3rE8Gm9',
-                        'title' => '𝐓𝐨𝐧𝐲𝐭𝐬 𝐅𝐨𝐨𝐝 𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬 𝐬𝐢𝐠𝐧𝐬 𝐌𝐎𝐀 𝐰𝐢𝐭𝐡 𝐃𝐎𝐒𝐓 𝐟𝐨𝐫 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲 𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐞𝐧𝐡𝐚𝐧𝐜𝐞𝐝 𝐩𝐫𝐨𝐝𝐮𝐜𝐭𝐢𝐯𝐢𝐭𝐲',
+                        'location' => '/img/setup3.jpg',
+                        'link' => 'https://tinyurl.com/2afm7c7w',
+                        'title' => '𝐄𝐱𝐩𝐞𝐫𝐢𝐞𝐧𝐜𝐞 𝐞𝐱𝐜𝐞𝐥𝐥𝐞𝐧𝐜𝐞 𝐢𝐧 𝐜𝐨𝐧𝐬𝐭𝐫𝐮𝐜𝐭𝐢𝐨𝐧 𝐰𝐢𝐭𝐡 𝐆𝐮𝐢𝐧𝐝𝐮𝐥𝐦𝐚𝐧 𝐇𝐨𝐥𝐥𝐨𝐰 𝐁𝐥𝐨𝐜𝐤𝐬 𝐌𝐚𝐧𝐮𝐟𝐚𝐜𝐭𝐮𝐫𝐢𝐧𝐠',
                         'program' => '#SETUP',
                     ])
                     @endcomponent
