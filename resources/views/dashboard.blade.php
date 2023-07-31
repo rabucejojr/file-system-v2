@@ -84,7 +84,7 @@
                                 <img src="/img/dost1.jpg" width="450px" class="d-block mx-auto" alt="Image 2">
                             </div>
                             <div class="carousel-item">
-                                <img src="/img/dost2.jpg" width="450px" class="d-block mx-auto" alt="Image 3">
+                                <img src="/img/gia2.jpg" width="450px" class="d-block mx-auto" alt="Image 3">
                             </div>
                             <div class="carousel-item">
                                 <img src="/img/dost3.jpg" width="450px" class="d-block mx-auto" alt="Image 4">
