@@ -120,7 +120,8 @@
                             <img class="w-auto h-90 object-cover" src="/img/dost2.jpg" alt="Card Image">
                             <div class="px-6 py-4">
                                 <div class="font-bold text-xl mb-2">
-                                    <a href="https://bit.ly/3rE8Gm9" target="_blank"> 𝐓𝐨𝐧𝐲𝐭𝐬 𝐅𝐨𝐨𝐝 𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬
+                                    <a href="https://bit.ly/3rE8Gm9" target="_blank"> 𝐓𝐨𝐧𝐲𝐭𝐬 𝐅𝐨𝐨𝐝
+                                        𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬
                                         𝐬𝐢𝐠𝐧𝐬 𝐌𝐎𝐀 𝐰𝐢𝐭𝐡 𝐃𝐎𝐒𝐓 𝐟𝐨𝐫 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲
                                         𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐞𝐧𝐡𝐚𝐧𝐜𝐞𝐝 𝐩𝐫𝐨𝐝𝐮𝐜𝐭𝐢𝐯𝐢𝐭𝐲</a>
                                 </div>
@@ -141,7 +142,8 @@
                             <img class="w-auto h-90 object-cover" src="/img/dost2.jpg" alt="Card Image">
                             <div class="px-6 py-4">
                                 <div class="font-bold text-xl mb-2">
-                                    <a href="https://bit.ly/3rE8Gm9" target="_blank"> 𝐓𝐨𝐧𝐲𝐭𝐬 𝐅𝐨𝐨𝐝 𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬
+                                    <a href="https://bit.ly/3rE8Gm9" target="_blank"> 𝐓𝐨𝐧𝐲𝐭𝐬 𝐅𝐨𝐨𝐝
+                                        𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬
                                         𝐬𝐢𝐠𝐧𝐬 𝐌𝐎𝐀 𝐰𝐢𝐭𝐡 𝐃𝐎𝐒𝐓 𝐟𝐨𝐫 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲
                                         𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐞𝐧𝐡𝐚𝐧𝐜𝐞𝐝 𝐩𝐫𝐨𝐝𝐮𝐜𝐭𝐢𝐯𝐢𝐭𝐲</a>
                                 </div>
@@ -162,7 +164,8 @@
                             <img class="w-auto h-90 object-cover" src="/img/dost2.jpg" alt="Card Image">
                             <div class="px-6 py-4">
                                 <div class="font-bold text-xl mb-2">
-                                    <a href="https://bit.ly/3rE8Gm9" target="_blank"> 𝐓𝐨𝐧𝐲𝐭𝐬 𝐅𝐨𝐨𝐝 𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬
+                                    <a href="https://bit.ly/3rE8Gm9" target="_blank"> 𝐓𝐨𝐧𝐲𝐭𝐬 𝐅𝐨𝐨𝐝
+                                        𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬
                                         𝐬𝐢𝐠𝐧𝐬 𝐌𝐎𝐀 𝐰𝐢𝐭𝐡 𝐃𝐎𝐒𝐓 𝐟𝐨𝐫 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲
                                         𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐞𝐧𝐡𝐚𝐧𝐜𝐞𝐝 𝐩𝐫𝐨𝐝𝐮𝐜𝐭𝐢𝐯𝐢𝐭𝐲</a>
                                 </div>
@@ -187,11 +190,12 @@
                     <div class="flex flex-cols gap-8">
                         {{-- first gia featured --}}
                         <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-                            <img class="w-auto h-90 object-cover" src="/img/dost4.jpg" alt="Card Image">
+                            <img class="w-auto h-90 object-cover" src="/img/gia1.jpg" alt="Card Image">
                             <div class="px-6 py-4">
-                                <div class="font-bold text-xl mb-2"><a href="https://bit.ly/44VPcb5">𝐃𝐎𝐒𝐓-𝐒𝐃𝐍
-                                        𝐦𝐨𝐧𝐢𝐭𝐨𝐫𝐬 𝐌𝐏𝐄𝐗 𝐜𝐥𝐢𝐞𝐧𝐭𝐬, 𝐬𝐞𝐞𝐬 𝐬𝐢𝐠𝐧𝐢𝐟𝐢𝐜𝐚𝐧𝐭
-                                        𝐢𝐦𝐩𝐫𝐨𝐯𝐞𝐦𝐞𝐧𝐭𝐬</a></div>
+                                <div class="font-bold text-xl mb-2"><a href="https://bit.ly/44VPcb5">𝐃𝐎𝐒𝐓 𝐭𝐮𝐫𝐧𝐬
+                                        𝐨𝐯𝐞𝐫 𝐂𝐚𝐬𝐬𝐚𝐯𝐚 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠 𝐅𝐚𝐜𝐢𝐥𝐢𝐭𝐲, 𝐬𝐩𝐚𝐫𝐤𝐬
+                                        𝐬𝐨𝐜𝐢𝐨𝐞𝐜𝐨𝐧𝐨𝐦𝐢𝐜 𝐠𝐫𝐨𝐰𝐭𝐡 𝐢𝐧 𝐜𝐨𝐧𝐟𝐥𝐢𝐜𝐭-𝐚𝐟𝐟𝐞𝐜𝐭𝐞𝐝
+                                        𝐜𝐨𝐦𝐦𝐮𝐧𝐢𝐭𝐲</a></div>
                                 <p
                                     class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
                                     #MPEX
@@ -204,11 +208,13 @@
                         </div>
                         {{-- second gia featured --}}
                         <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-                            <img class="w-auto h-90 object-cover" src="/img/dost4.jpg" alt="Card Image">
+                            <img class="w-auto h-90 object-cover" src="/img/gia2.jpg" alt="Card Image">
                             <div class="px-6 py-4">
                                 <div class="font-bold text-xl mb-2"><a href="https://bit.ly/44VPcb5">𝐃𝐎𝐒𝐓-𝐒𝐃𝐍
-                                        𝐦𝐨𝐧𝐢𝐭𝐨𝐫𝐬 𝐌𝐏𝐄𝐗 𝐜𝐥𝐢𝐞𝐧𝐭𝐬, 𝐬𝐞𝐞𝐬 𝐬𝐢𝐠𝐧𝐢𝐟𝐢𝐜𝐚𝐧𝐭
-                                        𝐢𝐦𝐩𝐫𝐨𝐯𝐞𝐦𝐞𝐧𝐭𝐬</a></div>
+                                        𝐟𝐨𝐫𝐠𝐞𝐬 𝐌𝐎𝐀 𝐰𝐢𝐭𝐡 𝐋𝐆𝐔-𝐌𝐚𝐢𝐧𝐢𝐭 𝐭𝐨 𝐩𝐫𝐨𝐦𝐨𝐭𝐞
+                                        𝐢𝐧𝐝𝐢𝐠𝐞𝐧𝐨𝐮𝐬 𝐝𝐞𝐥𝐢𝐜𝐚𝐜𝐢𝐞𝐬 𝐭𝐡𝐫𝐨𝐮𝐠𝐡 𝐢𝐧𝐧𝐨𝐯𝐚𝐭𝐢𝐯𝐞
+                                        𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐢𝐞𝐬
+                                    </a></div>
                                 <p
                                     class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
                                     #MPEX
@@ -246,59 +252,62 @@
                 <div class="flex items-center justify-center p-2">
                     <div class="flex flex-cols gap-8">
                         {{-- first rnd featured --}}
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-                        <img class="w-auto h-90 object-cover" src="/img/dost3.jpg" alt="Card Image">
-                        <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2"><a href="https://bit.ly/3q2QPF7" target="_blank">𝐃𝐎𝐒𝐓
-                                    𝐨𝐫𝐠𝐚𝐧𝐢𝐳𝐞𝐬
-                                    𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡, 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭, 𝐚𝐧𝐝 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧
-                                    𝐂𝐨𝐧𝐬𝐮𝐥𝐭𝐚𝐭𝐢𝐨𝐧 𝐂𝐚𝐫𝐚𝐯𝐚𝐧 𝐚𝐭 𝐒𝐮𝐫𝐢𝐠𝐚𝐨 𝐝𝐞𝐥 𝐍𝐨𝐫𝐭𝐞
-                                    𝐒𝐭𝐚𝐭𝐞
-                                    𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲</a></div>
-                            <p
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                                #DOSTCaraga</p>
-                            <p
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                                #SNSU</p>
+                        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                            <img class="w-auto h-90 object-cover" src="/img/dost3.jpg" alt="Card Image">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2"><a href="https://bit.ly/3q2QPF7"
+                                        target="_blank">𝐃𝐎𝐒𝐓
+                                        𝐨𝐫𝐠𝐚𝐧𝐢𝐳𝐞𝐬
+                                        𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡, 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭, 𝐚𝐧𝐝 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧
+                                        𝐂𝐨𝐧𝐬𝐮𝐥𝐭𝐚𝐭𝐢𝐨𝐧 𝐂𝐚𝐫𝐚𝐯𝐚𝐧 𝐚𝐭 𝐒𝐮𝐫𝐢𝐠𝐚𝐨 𝐝𝐞𝐥 𝐍𝐨𝐫𝐭𝐞
+                                        𝐒𝐭𝐚𝐭𝐞
+                                        𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲</a></div>
+                                <p
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                    #DOSTCaraga</p>
+                                <p
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                    #SNSU</p>
+                            </div>
                         </div>
-                    </div>
-                    {{-- second rnd featured --}}
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-                        <img class="w-auto h-90 object-cover" src="/img/dost3.jpg" alt="Card Image">
-                        <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2"><a href="https://bit.ly/3q2QPF7" target="_blank">𝐃𝐎𝐒𝐓
-                                    𝐨𝐫𝐠𝐚𝐧𝐢𝐳𝐞𝐬
-                                    𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡, 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭, 𝐚𝐧𝐝 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧
-                                    𝐂𝐨𝐧𝐬𝐮𝐥𝐭𝐚𝐭𝐢𝐨𝐧 𝐂𝐚𝐫𝐚𝐯𝐚𝐧 𝐚𝐭 𝐒𝐮𝐫𝐢𝐠𝐚𝐨 𝐝𝐞𝐥 𝐍𝐨𝐫𝐭𝐞
-                                    𝐒𝐭𝐚𝐭𝐞
-                                    𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲</a></div>
-                            <p
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                                #DOSTCaraga</p>
-                            <p
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                                #SNSU</p>
+                        {{-- second rnd featured --}}
+                        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                            <img class="w-auto h-90 object-cover" src="/img/dost3.jpg" alt="Card Image">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2"><a href="https://bit.ly/3q2QPF7"
+                                        target="_blank">𝐃𝐎𝐒𝐓
+                                        𝐨𝐫𝐠𝐚𝐧𝐢𝐳𝐞𝐬
+                                        𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡, 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭, 𝐚𝐧𝐝 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧
+                                        𝐂𝐨𝐧𝐬𝐮𝐥𝐭𝐚𝐭𝐢𝐨𝐧 𝐂𝐚𝐫𝐚𝐯𝐚𝐧 𝐚𝐭 𝐒𝐮𝐫𝐢𝐠𝐚𝐨 𝐝𝐞𝐥 𝐍𝐨𝐫𝐭𝐞
+                                        𝐒𝐭𝐚𝐭𝐞
+                                        𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲</a></div>
+                                <p
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                    #DOSTCaraga</p>
+                                <p
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                    #SNSU</p>
+                            </div>
                         </div>
-                    </div>
-                    {{-- third rnd featured --}}
-                    <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-                        <img class="w-auto h-90 object-cover" src="/img/dost3.jpg" alt="Card Image">
-                        <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2"><a href="https://bit.ly/3q2QPF7" target="_blank">𝐃𝐎𝐒𝐓
-                                    𝐨𝐫𝐠𝐚𝐧𝐢𝐳𝐞𝐬
-                                    𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡, 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭, 𝐚𝐧𝐝 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧
-                                    𝐂𝐨𝐧𝐬𝐮𝐥𝐭𝐚𝐭𝐢𝐨𝐧 𝐂𝐚𝐫𝐚𝐯𝐚𝐧 𝐚𝐭 𝐒𝐮𝐫𝐢𝐠𝐚𝐨 𝐝𝐞𝐥 𝐍𝐨𝐫𝐭𝐞
-                                    𝐒𝐭𝐚𝐭𝐞
-                                    𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲</a></div>
-                            <p
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                                #DOSTCaraga</p>
-                            <p
-                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                                #SNSU</p>
+                        {{-- third rnd featured --}}
+                        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                            <img class="w-auto h-90 object-cover" src="/img/dost3.jpg" alt="Card Image">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-xl mb-2"><a href="https://bit.ly/3q2QPF7"
+                                        target="_blank">𝐃𝐎𝐒𝐓
+                                        𝐨𝐫𝐠𝐚𝐧𝐢𝐳𝐞𝐬
+                                        𝐑𝐞𝐬𝐞𝐚𝐫𝐜𝐡, 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭, 𝐚𝐧𝐝 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧
+                                        𝐂𝐨𝐧𝐬𝐮𝐥𝐭𝐚𝐭𝐢𝐨𝐧 𝐂𝐚𝐫𝐚𝐯𝐚𝐧 𝐚𝐭 𝐒𝐮𝐫𝐢𝐠𝐚𝐨 𝐝𝐞𝐥 𝐍𝐨𝐫𝐭𝐞
+                                        𝐒𝐭𝐚𝐭𝐞
+                                        𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲</a></div>
+                                <p
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                    #DOSTCaraga</p>
+                                <p
+                                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+                                    #SNSU</p>
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
                 {{-- End of Consultancy --}}
