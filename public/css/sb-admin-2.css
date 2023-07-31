@@ -4392,7 +4392,7 @@ input[type="button"].btn-block {
 }
 
 .navbar {
-    position: relative;
+    position: sticky;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -4410,6 +4410,7 @@ input[type="button"].btn-block {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
 }
 
 .navbar-brand {
