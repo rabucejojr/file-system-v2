@@ -5,24 +5,15 @@ use App\Http\Controllers\FileController;
 use App\Http\Controllers\JsonDataController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
 Route::get('/', function () {
     return view('welcome');
 });
+
 // start modified routes
 Route::get('/app', function () {
     return view('partials.app');
 });
+
 Route::get('/table', [FileController::class, 'table'])->name('table');
 Route::get('/dashboard', [FileController::class, 'dashboard'])->name('dashboard');
 Route::get('/upload', [FileController::class, 'upload'])->name('upload');
@@ -35,6 +26,7 @@ Route::get('/file/{id}/edit', [FileController::class, 'edit'])->name('file.edit'
 Route::post('/file/update/{id}', [FileController::class, 'update'])->name('file.update');
 Route::delete('/file/delete/{id}', [FileController::class, 'destroy'])->name('file.destroy');
 // end modified routes
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -48,4 +40,4 @@ Route::middleware('auth')->group(function () {
 //fetch json
 Route::get('/json-data', [JsonDataController::class, 'fetchData'])->name('fetchData');
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

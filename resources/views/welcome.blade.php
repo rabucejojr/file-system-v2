@@ -38,8 +38,8 @@
                                 {{-- <h2 class="hero-title mt-0">Welcome, User</h2> --}}
                                 <h1 class="hero-paragraph">DOST-SDN :: File Management System</h2>
                                     <div class="hero-cta">
-                                        <a class="button button-primary" href="{{route('login')}}">Login</a>
-                                        <a class="button" href="{{route('register')}}">Register</a>
+                                        <a class="button button-primary" href="{{ route('login') }}">Login</a>
+                                        <a class="button" href="{{ route('register') }}">Register</a>
                                     </div>
                             </div>
                             <div class="hero-figure anime-element">

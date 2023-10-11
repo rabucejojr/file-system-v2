@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\DB;
 
 class JsonDataController extends Controller
 {
-    //
     public function fetchData(Request $request)
     {
         // fetch json data from mysql
