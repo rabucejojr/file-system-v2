@@ -6,7 +6,7 @@
         <div id="content">
             <!-- Topbar -->
             <nav
-                class="relative flex flex-wrap items-center content-between py-3 px-2 flex-no-wrap content-start text-black bg-white topbar mb-2 static-top shadow flex justify-end">
+                class="relative flex-wrap items-center py-3 px-2 flex-no-wrap content-start text-black bg-white topbar mb-2 static-top shadow flex justify-end">
 
                 <!-- Sidebar Toggle (Topbar) -->
                 <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
